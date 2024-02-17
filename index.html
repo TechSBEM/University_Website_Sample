@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta makes website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website</title>
+    <link rel="stylesheet"  href="/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/5ca19320d8.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <!-- adding a section to the page -->
+    <section class="header">
+        <nav>
+            
+            <!-- adding the logo to it using anchor tag -->
+            <a href="index.html"><img src="./eduford_img/logo.png"></a>
+            <!-- creating a div container on the navigation tag -->
+            <div class="nav-links" id="navLinks" >
+                <!-- Adding close icon to the site for responsiveness -->
+                <i class="fa fa-times " onclick="hideMenu()" ></i>
+                <ul>
+                     <li><a href="">HOME</a> </li>
+                    <li><a href="">ABOUT</a> </li>
+                    <li><a href="">COURSE</a> </li>
+                    <li><a href="">BLOG</a> </li>
+                    <li><a href="">CONTACT</a> </li>
+                </ul>
+
+            </div>
+            <!-- Adiing the menu icon to it and some js code-->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making website is now one of the easiest thing
+                in the world. <br>You just neewd to learn HTML, CSS, Javascript
+                and you are good to go.
+            </p>
+            <a href=""  class="hero-btn">Know more about us</a>
+        </div>
+
+
+    </section >
+
+    <!-- courses -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>We offer a lot of accredited.ajkldjakljdkjakld ka
+            aklkkljlkljljkljlkjlkjkllklkklkmlkl
+            kl;lk;k;
+        </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>
+                    In HTML, the right property is typically used in conjunction with CSS 
+                    to position elements within a container. It determines the position of
+                    an element relative to its containing element or, if the element is absolutely
+                    positioned, relative to its containing block.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>
+                    In HTML, the right property is typically used in conjunction with CSS 
+                    to position elements within a container. It determines the position of
+                    an element relative to its containing element or, if the element is absolutely
+                    positioned, relative to its containing block.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Postgraduate</h3>
+                <p>
+                    In HTML, the right property is typically used in conjunction with CSS 
+                    to position elements within a container. It determines the position of
+                    an element relative to its containing element or, if the element is absolutely
+                    positioned, relative to its containing block.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Campus Section -->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>WE have several campuses and few are listed below</p>
+        <div class="row">
+            <div class="campus-col">  
+                <img src="./eduford_img/london.png" alt="Picture of a building" />
+                <div class="layer ">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">  
+                <img src="./eduford_img/newyork.png" alt="Picture of a building" />
+                <div class="layer ">
+                    <h3>NEWYORK</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">  
+                <img src="./eduford_img/washington.png" alt="Picture of a building" />
+                <div class="layer ">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </section>
+
+
+
+    <!-- Facilities Section -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>These and many more</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="./eduford_img/library.png" alt="library"/>
+                <div class="facilities-text">
+                    <h3>World Class Library</h3>
+                    <P>Get all your books here
+                        Make sure to return the books when done.
+                        Aviod steal and falling in books.
+                        Do not also make noise.
+                    </P>
+    
+                </div>
+            </div>
+            <div class="facilities-col">
+                <img src="./eduford_img/basketball.png" alt="library"/>
+                <div class="facilities-text">
+                    <h3>Largest Basketball</h3>
+                    <P>Get all your books here
+                        Make sure to return the books when done.
+                        Aviod steal and falling in books.
+                        Do not also make noise.
+                    </P>
+    
+                </div>
+            </div>
+            <div class="facilities-col">
+                <img src="./eduford_img/cafeteria.png" alt="library"/>
+                <div class="facilities-text">
+                    <h3>Cafetaria</h3>
+                    <P>Get all your books here
+                        Make sure to return the books when done.
+                        Aviod steal and falling in books.
+                        Do not also make noise.
+                    </P>
+    
+                </div> 
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h1>What Our Students Say</h1>
+        <p>The are ..........</p>
+        <div class="row">
+            <div class="testimonials-cols">
+                <img src="./eduford_img/user1.jpg" alt="image of a female" />
+                <div class="testimonials-text ">
+                    <p>I am ...... and attended... in the year of...</p>
+                    <h3>Christine Berley</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            
+            
+            
+            
+            <div class="testimonials-cols">
+                <img src="./eduford_img/user2.jpg" alt="image of a female" />
+                <div class="testimonials-text ">
+                    <p>I am ...... and attended... in the year of...
+                        
+                        The CSS property transform: translateX(-50%); is used to horizontally translate an element by a percentage of its own width. Specifically, -50% means the element will be moved to the left by half of its own width.
+                    </p>
+                    <h3>Christine Berley</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- contact Us -->
+    <section class="contact">
+        <h1>Contact us</h1>
+        <p>If dealing with any issues concening school applications
+        </p>
+
+        <a href="" class="hero-btn">Contant Us</a>
+    </section>
+
+
+    <footer>
+        <h4>About Us</h4>
+        <p>.For inline elements like ,
+             the icons will typically align along the baseline of the text by default, meaning they will sit on the same line as the text content
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+        <p>This is made by <i class="fa fa-heart-o"></i>  TechBSEM </p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!--Adding a javascript code to it  -->
+    <script>
+        var navLinks= document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right= "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right= "-200px ";
+        }
+    </script>
+</body>
+</html>

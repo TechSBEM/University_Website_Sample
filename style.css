@@ -1,0 +1,443 @@
+/* making all margins and paddings null(0) */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header class of the section */
+.header {
+    height: 80px;
+    min-height: 100vh;
+    width: 100%;
+    /* url is the source of the image for the background-image */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./eduford_img/banner.png);
+    background-position: center;
+    /*cover makes the image gill the whole page preserving it ratio  */
+    background-size: cover;
+    position: relative;
+}
+
+/* the home page navigation tag */
+nav {
+    display: flex;
+    padding: 2%, 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* changing the wodth of the imaage */
+nav img {
+    width: 150px;
+}
+
+/* working on the  links on the navigation tag */
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+
+/* Making the anchor tags horizontal with no bullets */
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+/* Working on the anchor text */
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Giving the link a red underline color with some transition */
+.nav-links ul li::after {
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+/* Making the red background show only after hovering on it */
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Working on the text in the middle of the home page */
+.text-box {
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 4rem;
+}
+
+/* working with the paragraph in text-box */
+.text-box p {
+    margin: 20px 0 40px;
+    font-size: 18px;
+    color:white;
+}
+
+/* puting a box arount the Visist Us link */
+.hero-btn {
+    padding: 12px 34px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* making the visit link change color when mouse is hovered upon  */
+.hero-btn:hover{
+    border: 2px solid rgb(102, 21, 21);
+    background: rgb(102, 21, 21);
+    transition: 1s;
+}
+
+/* Making the icons invinsible on the smaller screen */
+nav .fa{
+    display: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Making the website responsive using @media */
+@media (max-width:700px) {
+    .text-box h1{
+        font-size: 2rem;
+    }
+
+    .text-box p{
+        font-size: 15px;
+    }
+    /* Making the navigation links appear block on smaller phones */
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        background: #f44336;
+        z-index: 2;
+        text-align: left;
+        transition: 0.5s;
+    } 
+
+    /* Making the icons appear on smaller screens */
+    nav .fa {
+        display: block;
+        color:white;
+        margin: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    /* Making the list appear nicer */
+    .nav-links ul{
+        padding: 30px;
+    }
+
+
+}
+
+
+
+
+
+/* Course section */
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color:rgb(124, 131, 131);
+    font-size: 14;
+    line-height: 2;
+    padding: 10px;
+
+}
+
+.row {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+/* Creating the color around the columns */
+.course-col {
+    background: #fff3f3;
+    box-sizing: border-box;
+    flex-basis: 31%;
+    border-radius: 10%;
+    padding: 20px 12px;
+    margin-bottom: 10%;
+    transition: 0.5s;
+
+}
+
+/* h3 of the column of degree.. */
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+
+/* Adding a shadow hovering effect to it */
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+    /* making the flex a row */
+    .row{
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p{
+        font-size: 15px
+    }
+}
+
+
+/* CAMPUS SECTION */
+.campus {
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    width: 80%;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 20%;
+    position: relative;
+    /* Set desired behaviour when content does not fit in the parent element */
+    overflow: hidden;
+}
+
+/* Making the image fit with the hidden value of overflow selected */
+.campus-col img{
+    width: 100%;
+    /* making the bottom corner round */
+    display: block;
+}
+
+.layer {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: transparent;
+    transform: 1s;
+}
+
+.layer:hover {
+    background:rgba(226,0,0,0.7);
+
+}
+
+/* making the h3 elemnt un our Global Campus image appear down */
+.layer h3 {
+    color: white;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;;
+}
+
+
+/* Making the words come from the bottom */
+.layer:hover h3{
+    bottom:49%;
+    opacity: 1;
+}
+
+
+
+
+
+
+/*  */
+/*  */
+/* Our Facilities Section */
+.facilities {
+    text-align: center;
+    margin:auto;
+    width: 80%;
+    padding-top: 50px;
+
+}
+
+
+.facilities-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    /* Set desired behaviour when content does not fit in the parent element */
+   
+
+}
+
+
+.facilities-col img {
+    width: 100%;
+   border-radius: 10px;
+}
+
+
+.facilities-text p {
+    padding: 0px;
+}
+ 
+
+.facilities-text h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* textimonials section */
+.testimonials {
+    margin:auto;
+    padding-top: 100px;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.testimonials-cols {
+    flex-basis: 44%;
+    display:flex;
+    background: #fff3f3;
+    text-align: left;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.testimonials-cols img {
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.testimonials-cols p {
+    padding: 0%;
+}
+
+
+.testimonials-cols h3 {
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+.testimonials-cols .fa {
+    color: #f44336
+}
+
+
+
+
+
+/* contact */
+.contact {
+    margin: 100px auto;
+    
+    width: 80%;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./eduford_img/about.jpg");
+    background-position: center;
+    border-radius: 10px;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+
+}
+
+
+.contact h1{
+    color: white;
+}
+
+
+@media(max-width: 700px){
+    .contact {
+        margin: 80px auto;
+        padding: 50px 0;
+       
+    
+    }
+
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.icons .fa {
+    color:#f44336;
+    padding: 8px;
+}
