@@ -5,7 +5,7 @@
     <!-- meta makes website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University website</title>
-    <link rel="stylesheet"  href="style.css" />
+    <link rel="stylesheet"  href="/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
     <script src="https://kit.fontawesome.com/5ca19320d8.js" crossorigin="anonymous"></script>
 </head>
@@ -14,7 +14,7 @@
 <body>
 
     <!-- adding a section to the page -->
-    <section class="header">
+    <section class="header" id="Home">
         <nav>
             
             <!-- adding the logo to it using anchor tag -->
@@ -24,11 +24,11 @@
                 <!-- Adding close icon to the site for responsiveness -->
                 <i class="fa fa-times " onclick="hideMenu()" ></i>
                 <ul>
-                     <li><a href="">HOME</a> </li>
-                    <li><a href="">ABOUT</a> </li>
-                    <li><a href="">COURSE</a> </li>
-                    <li><a href="">BLOG</a> </li>
-                    <li><a href="">CONTACT</a> </li>
+                     <li><a href="#Home">HOME</a> </li>
+                    <li><a href="#Abouts">ABOUT</a> </li>
+                    <li><a href="#Courses">COURSE</a> </li>
+                    <li><a href="#Facilities">BLOG</a> </li>
+                    <li><a href="#Contacts">CONTACT</a> </li>
                 </ul>
 
             </div>
@@ -49,39 +49,33 @@
     </section >
 
     <!-- courses -->
-    <section class="course">
+    <section class="course" id="Courses">
         <h1>Courses We Offer</h1>
-        <p>We offer a lot of accredited.ajkldjakljdkjakld ka
-            aklkkljlkljljkljlkjlkjkllklkklkmlkl
-            kl;lk;k;
+        <p>Dive into a diverse array of courses tailored to your passions and career aspirations. From arts to sciences, our university offers 
+            a comprehensive selection to ignite your intellectual journey
         </p>
 
         <div class="row">
             <div class="course-col">
                 <h3>Intermediate</h3>
                 <p>
-                    In HTML, the right property is typically used in conjunction with CSS 
-                    to position elements within a container. It determines the position of
-                    an element relative to its containing element or, if the element is absolutely
-                    positioned, relative to its containing block.
+                    Discover a rich variety of intermediate-level courses designed to deepen your knowledge and expand your horizons. 
+                    Explore new subjects and hone your skills with our diverse offering.
                 </p>
             </div>
             <div class="course-col">
                 <h3>Degree</h3>
                 <p>
-                    In HTML, the right property is typically used in conjunction with CSS 
-                    to position elements within a container. It determines the position of
-                    an element relative to its containing element or, if the element is absolutely
-                    positioned, relative to its containing block.
+                    Embark on an enriching academic journey with our comprehensive range of degree programs, designed to equip you with the skills and knowledge needed for success in your chosen field. From undergraduate to 
+                    postgraduate studies, we offer a pathway to a brighter future
                 </p>
             </div>
             <div class="course-col">
                 <h3>Postgraduate</h3>
                 <p>
-                    In HTML, the right property is typically used in conjunction with CSS 
-                    to position elements within a container. It determines the position of
-                    an element relative to its containing element or, if the element is absolutely
-                    positioned, relative to its containing block.
+                    Elevate your expertise with our advanced postgraduate programs, tailored to propel your career to new heights. Explore specialized fields and
+                     engage in cutting-edge research, shaping the future of your industry
+                   
                 </p>
             </div>
         </div>
@@ -89,7 +83,7 @@
     </section>
 
     <!--Campus Section -->
-    <section class="campus">
+    <section class="campus" id="Campus">
         <h1>Our Global Campus</h1>
         <p>WE have several campuses and few are listed below</p>
         <div class="row">
@@ -122,7 +116,7 @@
 
 
     <!-- Facilities Section -->
-    <section class="facilities">
+    <section class="facilities" id="Facilities">
         <h1>Our Facilities</h1>
         <p>These and many more</p>
         <div class="row">
@@ -130,10 +124,9 @@
                 <img src="./eduford_img/library.png" alt="library"/>
                 <div class="facilities-text">
                     <h3>World Class Library</h3>
-                    <P>Get all your books here
-                        Make sure to return the books when done.
-                        Aviod steal and falling in books.
-                        Do not also make noise.
+                    <P>
+                        The university library, established in 1920, continues to be a beacon of academic excellence and knowledge dissemination, offering a vast array of resources and innovative services 
+                        to support the scholarly pursuits of students and faculty alike
                     </P>
     
                 </div>
@@ -142,10 +135,10 @@
                 <img src="./eduford_img/basketball.png" alt="library"/>
                 <div class="facilities-text">
                     <h3>Largest Basketball</h3>
-                    <P>Get all your books here
-                        Make sure to return the books when done.
-                        Aviod steal and falling in books.
-                        Do not also make noise.
+                    <P>
+                        Basketball, originating in 1891, has evolved i
+                        nto a global phenomenon, captivating audiences with its fast-paced action and teamwork, while inspiring countless
+                         individuals to strive for greatness on and off the court
                     </P>
     
                 </div>
@@ -154,11 +147,9 @@
                 <img src="./eduford_img/cafeteria.png" alt="library"/>
                 <div class="facilities-text">
                     <h3>Cafetaria</h3>
-                    <P>Get all your books here
-                        Make sure to return the books when done.
-                        Aviod steal and falling in books.
-                        Do not also make noise.
-                    </P>
+                    <P>
+                        The bustling cafeteria, a hub of social interaction, serves as a nourishing pit stop for students and staff, fueling their 
+                        day with delicious meals and lively conversations.
     
                 </div> 
             </div>
@@ -168,14 +159,16 @@
 
 
     <!-- Testimonials -->
-    <section class="testimonials">
+    <section class="testimonials" id="Testimonials">
         <h1>What Our Students Say</h1>
         <p>The are ..........</p>
         <div class="row">
             <div class="testimonials-cols">
                 <img src="./eduford_img/user1.jpg" alt="image of a female" />
                 <div class="testimonials-text ">
-                    <p>I am ...... and attended... in the year of...</p>
+                    <p>
+                        "Delighted with my experience! The website made finding what I needed effortless, 
+                        and the customer service was exceptional. I'll definitely be back!</p>
                     <h3>Christine Berley</h3>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -191,9 +184,8 @@
             <div class="testimonials-cols">
                 <img src="./eduford_img/user2.jpg" alt="image of a female" />
                 <div class="testimonials-text ">
-                    <p>I am ...... and attended... in the year of...
-                        
-                        The CSS property transform: translateX(-50%); is used to horizontally translate an element by a percentage of its own width. Specifically, -50% means the element will be moved to the left by half of its own width.
+                    <p>"Absolutely thrilled with my purchase! The website was user-friendly, and 
+                        the product exceeded my expectations. Thanks for an awesome experience!
                     </p>
                     <h3>Christine Berley</h3>
                     <i class="fa fa-star"></i>
@@ -209,19 +201,19 @@
 
 
     <!-- contact Us -->
-    <section class="contact">
+    <section class="contact"  >
         <h1>Contact us</h1>
         <p>If dealing with any issues concening school applications
         </p>
 
-        <a href="" class="hero-btn">Contant Us</a>
+        <a href="" class="hero-btn" id="Contacts">Contant Us</a>
     </section>
 
 
-    <footer>
+    <footer id="Abouts">
         <h4>About Us</h4>
-        <p>.For inline elements like ,
-             the icons will typically align along the baseline of the text by default, meaning they will sit on the same line as the text content
+        <p>
+            "Explore our university website for a world of opportunities and information. Start your journey today!"
         </p>
         <div class="icons">
             <i class="fa fa-facebook"></i>
